@@ -2,10 +2,11 @@
   "name": "react-tutorials",
   "version": "1.0.0",
   "description": "first App",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot --host 127.0.0.1"
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --hot --host 127.0.0.1 --content-base public/"
   },
   "author": "",
   "license": "ISC",
